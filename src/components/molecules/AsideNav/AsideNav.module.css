@@ -1,0 +1,54 @@
+.c-side {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 1px solid var(--borderAside);
+  height: 100vh;
+  max-width: 80%;
+  width: 500px;
+  position: fixed;
+  top: 0px;
+  transition: 0.4s;
+  z-index: 3;
+  background-color: var(--backgroundAside);
+  padding: .5rem 1rem;
+}
+.c-side-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.c-side-nav-item {
+  padding: 0.8rem;
+  border-bottom: 1px solid var(--borderAside);
+}
+
+.c-overlay {
+  position: fixed;
+  background-color: var(--overlayAside);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  z-index: 2;
+  display: none;
+}
+
+.position-left{
+  left: -548px;
+}
+
+.aside--active--left{
+  left: 0;
+}
+
+.position-right{
+  right: -548px;
+}
+
+.aside--active--right{
+  right: 0px;
+}
+
+.overlay--active {
+  display: block;
+}

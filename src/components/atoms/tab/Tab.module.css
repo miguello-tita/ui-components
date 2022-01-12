@@ -1,0 +1,86 @@
+.TabsBtn {
+  font-family: inherit;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 0.875rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+  letter-spacing: 0.0892857143em;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-right: 24px;
+  padding-left: 24px;
+  position: relative;
+  display: flex;
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  outline: none;
+  background: none;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-appearance: none;
+  z-index: 1;
+  min-height: 48px;
+}
+.TabsBtnContent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  pointer-events: none;
+}
+.TabsBtnContent i {
+  color: rgba(0, 0, 0, 0.54);
+  margin: 0;
+}
+.TabsBtnContentLabel {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.TabsBtnIndicator {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+.TabsBtnIndicatorContent {
+  transform-origin: left;
+  opacity: 0;
+  align-self: flex-end;
+  box-sizing: border-box;
+  width: 100%;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-color: var(--primaryColor);
+  transition: 250ms opacity cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.TabsBtn[aria-selected='true'] {
+  color: var(--primaryColor);
+}
+.TabsBtn[aria-selected='true'] .TabsBtnIndicatorContent {
+  opacity: 1;
+}
+.TabsBtn[aria-selected='true'] .TabsBtnContent i {
+  color: var(--primaryColor);
+}
+
+.TabsBtnContent[position-icon='top'] {
+  flex-direction: column;
+}
+.TabsBtnContent[position-icon='right'] {
+  flex-direction: row-reverse;
+}

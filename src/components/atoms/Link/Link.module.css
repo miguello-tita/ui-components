@@ -1,0 +1,8 @@
+.LinkCont{
+    text-decoration: none;
+    color: inherit;
+}
+
+.LinkCont i{
+    color: var(--primaryColorDark)
+}

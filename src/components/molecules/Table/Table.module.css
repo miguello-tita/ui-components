@@ -1,0 +1,17 @@
+.table{
+  border-collapse: collapse;
+  border: 1px solid var(--colorborderTable);
+}
+
+.table-content{
+  border-radius: 8px;
+  border-top: 1px solid var(--colorborderTable);
+}
+
+.table-content-item{
+  padding: 1rem;
+}
+
+.body-content:hover{
+  background-color: var(--backgroundHoverTable);
+}

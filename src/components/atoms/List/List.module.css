@@ -1,0 +1,31 @@
+.ListCont{
+    margin-left: 20px;
+    line-height: 1.5rem;
+}
+
+.ListCont[type="none"]{
+    list-style-type: none;
+}
+.ListCont[type="upper-alpha"]{
+    list-style-type: upper-alpha;
+}
+.ListCont[type="lower-alpha"]{
+    list-style-type: lower-alpha;
+}
+
+.ListCont[type="decimal"]{
+    list-style-type: decimal;
+}
+
+.ListCont[type="circle"]{
+    list-style-type: circle;
+}
+
+.ListCont[type="disc"]{
+    list-style-type: disc;
+}
+
+.ListCont li::marker{
+    font-weight: bold;
+    color: var(--primaryColorDark);
+}

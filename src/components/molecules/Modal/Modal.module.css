@@ -1,0 +1,42 @@
+.c-modal {
+  max-width: var(--maxWidthModal);
+  margin: auto;
+  padding: 2rem;
+  box-shadow: var(--boxModal);
+  z-index: 5;
+  position: fixed;
+  transition: 0.4s;
+  top: -100vh;
+  left: 10vw;
+  right: 10vw;
+  background-color: var(--backgroundModal);
+}
+.c-modal-overlay {
+  position: fixed;
+  background-color: var(--colorOverlay);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  z-index: 2;
+  display: none;
+}
+
+.overlay--active {
+  display: block;
+}
+
+.modal--active {
+  top: 10vh;
+}
+.c-modal[data-size="small"]{
+  height: max-content;
+  max-width: 400px;
+}
+.c-modal[data-size="medium"]{
+  max-width: 700px;
+}
+.c-modal[data-size="large"]{
+  max-width: 1000px;
+}

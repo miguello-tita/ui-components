@@ -1,0 +1,130 @@
+.c-vid{
+    position: relative;
+    color: #fff;
+}
+
+.c-vid video{
+    outline: none;
+    border: 2px solid var(--primaryColor);
+    box-shadow: var(--shadowSize) var(--primaryColorLight);
+    height: 100%;
+    width: 100%;
+}
+
+.c-vid-controls{
+    display: grid;
+    grid-template-columns: 27px 1fr 151px 32px;
+    grid-gap: .3rem;
+    background-color: var(--primaryColor);
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    bottom: 6px;
+    left: 2px;
+    padding: .2rem 0;
+}
+
+.c-vid-controls-text{
+    margin: 0;
+}
+
+.c-vid-controls i{
+    color: #fff;
+    margin: auto;
+}
+
+.progress-content{
+    position: absolute;
+    bottom: 18px;
+    height: 20px;
+    width: 100%;
+    left: 2px;
+}
+
+.progress{
+    flex: 10;
+    display: flex;
+    flex-basis: 100%;
+    height: 6px;
+    transition: height 0.3s;
+    background: rgba(0, 0, 0, .4);
+    cursor: pointer;
+    position: relative;
+}
+
+.progress-bar{
+    width: 50%;
+    background-color: var(--primaryColor);
+    flex: 0;
+    flex-basis: 0%;
+}
+
+.c-vid-controls-volumn{
+    display: grid;
+    grid-template-columns: 20px 1fr;
+}
+
+.c-vid-controls-volumn-item[type="range"]::-webkit-slider-runnable-track{
+    background-color: white;
+    border-radius: 8px;
+    height: 10px;
+}
+
+input[type=range]::-moz-range-track {
+    background-color: white;
+    border-radius: 8px;
+    height: 10px;
+}
+
+input[type=range] {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 100%; /* Specific width is required for Firefox. */
+    background: transparent; /* Otherwise white in Chrome */
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+  
+  input[type=range]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  }
+  
+  input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+  
+    /* Hides the slider so custom styles can be added */
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+  }
+
+  /* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: var(--secondaryColor);
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -4px; /* You need to specify a margin in Chrome, Add cool effects to your sliders! */
+  }
+  
+  /* All the same stuff for Firefox */
+  input[type=range]::-moz-range-thumb {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: var(--secondaryColor);
+    cursor: pointer;
+  }
+  
+  /* All the same stuff for IE */
+  input[type=range]::-ms-thumb {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: var(--secondaryColor);
+    cursor: pointer;
+  }

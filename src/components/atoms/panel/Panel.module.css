@@ -1,0 +1,14 @@
+.Panel {
+  box-shadow: 0px 1px 3px #5d5d5d;
+  padding: 0.5rem;
+  animation: fadeIn ease .75s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

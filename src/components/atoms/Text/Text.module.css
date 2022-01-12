@@ -1,0 +1,76 @@
+.Typography {
+    margin: 0;
+    font-family: inherit;
+    margin-bottom: 0.35em;
+}
+
+.Typography[type='h1']{
+    font-size: var(--h1FontSize);
+    font-weight: var(--h1FontWeight);
+    line-height: 1.167;
+    letter-spacing: -0.01562em;
+}
+
+.Typography[type='h2']{
+    font-size: var(--h2FontSize);
+    font-weight: var(--h2FontWeight);
+    line-height: 1.2;
+    letter-spacing: -0.00833em;
+}
+
+.Typography[type='h3']{
+    font-size: var(--h3FontSize);
+    font-weight: var(--h3FontWeight);
+    line-height: 1.167;
+    letter-spacing: 0em;
+}
+
+.Typography[type='h4']{
+    font-size: var(--h4FontSize);
+    font-weight: var(--h4FontWeight);
+    line-height: 1.235;
+    letter-spacing: 0.00735em;
+}
+
+.Typography[type='h5']{
+    font-size: var(--h5FontSize);
+    font-weight: var(--h5FontWeight);
+    line-height: 1.334;
+    letter-spacing: 0em;
+}
+
+.Typography[type='h6']{
+    font-size: var(--h6FontSize);
+    font-weight: var(--h6FontWeight);
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+}
+
+.Typography[type='p']{
+    font-size: var(--textBody);
+}
+
+.Typography[type='subtitle'] {
+    font-size: var(--subTitleFz);
+    font-weight: var(--subTitleFw);
+    line-height: 1.57;
+    letter-spacing: 0.00714em;
+}
+
+.Typography[type='caption'] {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+}
+
+.Typography[text-align='center'] {
+    text-align: center !important;
+}
+.Typography[text-align='left'] {
+    text-align: left !important;
+}
+.Typography[text-align='right'] {
+    text-align: right !important;
+}
+

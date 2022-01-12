@@ -1,0 +1,70 @@
+.u-page{
+    padding: .3rem;
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+}
+
+.c-scroll{
+    overflow-x: auto;
+}
+
+.c-gridTable{
+    width: 100%;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.c-gridTable-pagination{
+    display: flex;
+    justify-content: center;
+}
+
+.c-gridTable-pagination-content{
+    display: flex;
+    font-size: 19px;
+    align-items: center;
+}
+
+.c-gridTable-pagination-content-btn{
+    background: transparent;
+    border: none;
+}
+
+.c-gridTable-pagination-content-btn i {
+    margin: 0;
+    width: auto;
+    height: auto;
+    font-size: 25px;
+}
+
+.c-gridTable-pagination-content-text span{
+    margin: 0 .5rem;
+}
+
+.c-gridTable-head{
+    box-shadow: rgba(0, 0, 0, 0.29) 2px 9px 20px 3px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.c-gridTable-head, .c-gridTable-body{
+    display: grid;
+    grid-gap: .8rem;
+    justify-content: space-around;
+}
+
+.c-gridTable-body-row , .c-gridTable-head-item{
+    text-align: center;
+}
+
+.c-gridTable-head-item {
+    padding: .5rem;
+}
+
+.c-gridTable-body-row{
+    padding: .5rem;
+    border-radius: 6px;
+    display: grid;
+    width: 100%;
+}

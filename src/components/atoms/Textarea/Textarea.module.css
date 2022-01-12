@@ -1,0 +1,23 @@
+.TextareaCont{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.TextareaItem{
+    border: 1px solid var(--colorBorderCard);
+    box-shadow: var(--boxCard);
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+    max-width: 250px;
+    width: 100%;
+    font-family: inherit;
+    font-size: 1rem;
+}
+.CountCont{
+    max-width: max-content;
+    padding: 5px;
+    display: block;
+    text-align: right;
+    font-size: .8rem;
+}

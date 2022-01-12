@@ -1,0 +1,38 @@
+.ButtonBase {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    min-width: var(--minWidthSizeBtn);
+    min-height: var(--minHeightSizeBtn);
+    padding: var(--paddingBtn);
+    color: var(--textColor);
+    font-family: inherit;
+    margin: var(--marginBtn);
+    border-radius: var(--borderRadiusBtn);
+    transition: background 0.5s ease;
+    cursor: pointer;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: var(--fontSizeButton);
+    line-height: 2.25rem;
+    font-weight: 500;
+    letter-spacing: .0892857143em;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    overflow: visible;
+    vertical-align: middle;
+}
+.ButtonBase i {
+    margin-left: -4px;
+    margin-right: 8px;
+}

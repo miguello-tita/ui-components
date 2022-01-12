@@ -1,0 +1,69 @@
+.ColorBase[styled='primary'], .ColorBase[styled='primary-icon']{
+    background-color: var(--primaryColor);
+    box-shadow: var(--shadowSize) var(--primaryColorLight);
+}
+.ColorBase[styled='primary']:hover, .ColorBase[styled='primary-icon']:hover{
+        background-color: var(--primaryColorLight);
+}
+.ColorBase[styled='secondary'], .ColorBase[styled='secondary-icon']{
+    background-color: var(--secondaryColor);
+    box-shadow: var(--shadowSize) var(--secondaryColorLight);
+}
+.ColorBase[styled='secondary']:hover, .ColorBase[styled='secondary-icon']:hover{
+    background-color: var(--secondaryColorLight);
+}
+.ColorBase[styled='secondary-outline'], .ColorBase[styled='secondary-icon-outline']{
+    background-color: var(--bgColorOutline);
+    border: 1px solid var(--secondaryColor);
+    color: var(--secondaryColor);
+
+}
+.ColorBase[styled='secondary-outline']:hover, .ColorBase[styled='secondary-icon-outline']:hover{
+    background-color: var(--secondaryColorLight);
+    color: var(--textColor);
+    background-color: var(--secondaryColor);
+}
+
+.ColorBase[styled='primary-outline'], .ColorBase[styled='primary-icon-outline']{
+    background-color: var(--bgColorOutline);
+    border: 1px solid var(--primaryColor);
+    color: var(--primaryColor);
+
+}
+.ColorBase[styled='primary-outline']:hover, .ColorBase[styled='primary-icon-outline']:hover{
+    background-color: var(--primaryColorLight);
+    color: var(--textColor);
+    background-color: var(--primaryColor);
+}
+
+.ColorBase[styled='primary-icon'], .ColorBase[styled='secondary-icon'], .ColorBase[styled='secondary-icon-outline'], .ColorBase[styled='primary-icon-outline']{
+    min-width: 0;
+    min-height: 0;
+    width: var(--minSizeBtnIcon);
+    height: var(--minSizeBtnIcon);
+    padding: 0;
+    border-radius: 50%;
+}
+
+.ColorBase[styled='primary-outline'][disabled], .ColorBase[styled='secondary-outline'][disabled], .ColorBase[styled='secondary-icon-outline'][disabled], .ColorBase[styled='primary-icon-outline'][disabled]{
+    border-color: var(--bgColorDisabled);
+    background-color: transparent;
+}
+
+.ColorBase[styled='primary-icon'] i, .ColorBase[styled='secondary-icon']  i, .ColorBase[styled='secondary-icon-outline'] i, .ColorBase[styled='primary-icon-outline'] i {
+    margin: 0 auto;
+}
+
+/*style disabled*/
+
+.ColorBase[disabled]{
+    background-color: var(--bgColorDisabled);
+    pointer-events: none;
+    box-shadow: none;
+    color: var(--textColorDisabled);
+}
+
+.ColorBase[styled='primary-outline'][disabled], .ColorBase[styled='secondary-outline'][disabled], .ColorBase[styled='secondary-icon-outline'][disabled], .ColorBase[styled='primary-icon-outline'][disabled]{
+    border-color: var(--bgColorDisabled);
+    background-color: transparent;
+}

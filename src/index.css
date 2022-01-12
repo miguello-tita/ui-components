@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v67/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+
+html {
+  font-family: Roboto;
+}
+
+:root{
+  /* Base Color */
+  --primaryColorDark: #320b86;
+  --primaryColor: #673ab7;
+  --primaryColorLight: #9a67ea;
+  --secondaryColorDark: #003f8f;
+  --secondaryColor: #0069c0;
+  --secondaryColorLight: #5996f3;
+  --textColor: #fafafa;
+
+  --bgColorGood:#00b02e;
+  --bgColorWrong:#b00020;
+
+  --bgColorDisabled: rgb(0 0 0 / .12);
+  --textColorDisabled: #919191;
+  --opacityDisabled: 0.5;
+
+  /*Base  Color outline*/
+  --bgColorOutline: white;
+
+  /*Base  Color outline*/
+  --minSizeBtnIcon: 40px;
+
+  /* button variables */
+  --minWidthSizeBtn: 64px;
+  --minHeightSizeBtn: 2rem;
+  --fontSizeButton: .875rem;
+  --paddingBtn: 0 8px 0 8px;
+  --marginBtn: 5px;
+  --borderRadiusBtn: 4px;
+  --shadowSize: 0px 0px 5px;
+
+  /* input variables */
+  --bgFieldInput: rgba(199, 195, 195, 20%);
+  --bgFieldInputFocus: rgba(199, 195, 195, 70%);
+  --brFieldInput: 4px 4px 0 0;
+  --colorbrBottom: black;
+    /* label */
+  --textSizeLabel: 0.875rem;
+  --textlhLabel: 0.25rem;
+  --textweightLabel: 400;
+  --textspacingLabel: 0.0178571429em;
+  --textColorLabel: rgba(0,0,0,.87);
+
+    /* bg color input */
+  --bgColorInputNoCheck: #757575;
+  --coloSuccesInput: green;
+  --coloErrorInput: red;
+
+    /*card*/
+    --colorBorderCard: #e0e0e0;
+    --boxCard: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0,0,0,.12);
+    --colorTextCard: black;
+
+    /* modal*/
+    --backgroundModal: #fff;
+    --boxModal: 5px 3px 11px 0px #8d8989;
+    --colorOverlay: black;
+    --maxWidthModal: 600px;
+    /*aside nav*/
+    --borderAside: #ddd;
+    --overlayAside: black;
+    --backgroundAside: #fff;
+    /*dropable*/
+    --boxDropable: rgba(129, 129, 129, 0.52);
+    --maxWidthDropable: 500px;
+    --colorBorderDropable: #ddd ;
+
+    /* nav */
+
+    --bgNavHover: #ededed;
+    --txtNavHover: none;
+    --borderRadiusNav: .25rem;
+    --boxShadowNav: 0px 0px 4px #a5a5a5;
+
+  /* Multimedia */
+    --widthBtnAudio: 30px;
+    /* typography */
+
+    /* table */
+    --colorborderTable: rgba(0, 0, 0, .12);
+    --backgroundHoverTable:rgba(0, 0, 0, .04);
+    --h1FontSize: 6rem;
+    --h1FontWeight: 300;
+
+    --h2FontSize: 3.75rem;
+    --h2FontWeight: 300;
+
+    --h3FontSize: 3rem;
+    --h3FontWeight: 400;
+
+    --h4FontSize: 2.125rem;
+    --h4FontWeight: 400;
+
+    --h5FontSize: 1.5rem;
+    --h5FontWeight: 400;
+
+    --h6FontSize: 1.25rem;
+    --h6FontWeight: 500;
+
+    --textBody: 1rem;
+    --subTitleFz: 0.875rem;
+    --subTitleFw: 500;
+
+}

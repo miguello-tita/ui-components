@@ -1,0 +1,38 @@
+.c-aud-btn{
+    border: none;
+    cursor: pointer;
+    background-color: var(--primaryColor);
+    box-shadow: var(--shadowSize) var(--primaryColorLight);
+    padding: .5rem;
+    outline: none;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.c-aud-btn[data-label='string']{
+    border-radius: 18px;
+}
+
+.c-aud-btn-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: var(--widthBtnAudio);
+    min-height: var(--widthBtnAudio);
+}
+
+.c-aud-btn:hover{
+    background-color: var(--primaryColorLight);
+}
+
+.c-aud-btn-content i{
+    font-size: 21px;
+    margin: 0;
+    color: var(--textColor);
+    margin-bottom: 4px;
+    margin-right: 2px;
+}
+
+.c-aud-btn-content[data-label='string'] i{
+    margin-right: 9px;
+}

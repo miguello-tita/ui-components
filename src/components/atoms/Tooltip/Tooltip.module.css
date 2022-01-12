@@ -1,0 +1,38 @@
+.TooltipCont{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.TooltipItem{
+    position: absolute;
+    background-color: #4a4a4a;
+    padding: 8px;
+    display: none;
+    border-radius: 5px;
+    color: white;
+    width: max-content;
+    bottom: -45px;
+    z-index: 1;
+}
+
+.TooltipItem::before{
+    content: "";
+    position: absolute;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid transparent;
+    border-bottom: 15px solid #4a4a4a;
+    height: 0;
+    width: 0;
+    left: 0;
+    right: 0;
+    top: -23px;
+    margin: auto;
+}
+
+.TooltipCont:hover .TooltipItem{
+    display: block;
+}

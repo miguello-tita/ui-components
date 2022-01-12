@@ -1,0 +1,23 @@
+.u-text{
+    color: var(--colorTextCard);
+    font-size: 14px;
+}
+
+.c-card {
+    border: 1px solid var(--colorBorderCard);
+    box-shadow: var(--boxCard);
+    border-radius: 5px;
+    min-width: 250px;
+}
+
+.c-card-image{
+    margin: 0;
+}
+
+.c-card-image img{
+    width: 100%;
+}
+
+.c-card-container{
+    padding: .5rem 1.5rem;
+}
